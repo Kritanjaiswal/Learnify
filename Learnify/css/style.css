@@ -216,19 +216,6 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* .menu.open {
-  display: block;
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(244, 124, 124, 0.97);
-  top: 0px;
-  left: 0;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  animation: slideIn 0.5s ease-in-out;
-  z-index: 100;
-} */
 .open {
   display: block;
   width: 70%;
@@ -319,7 +306,6 @@ header {
       #ea097f 50%,
       #e12038 66.666%,
       #f06f25 83.333%
-      /* #323292 10.666% */
     );
 
   /* Set the background size and repeat properties. */
