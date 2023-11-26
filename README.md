@@ -1,1 +1,1 @@
-# Scholar-Sidekick
+# Learnify
