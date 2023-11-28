@@ -24,7 +24,9 @@
                 </p>
             </div>
 
-            <form action="https://formspree.io/f/mvoygqdg" method="POST">
+            <form action="https://formspree.io/f/mvoygqdg" action="{% url 'contact_us' %}" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
                 <div class="form-floating mb-3">
                     <input type="text" pattern="^[\S]+\s+[\S]+$" name="name" class="name form-control" id="floatingInput" placeholder="Name" required>
                     <label for="name">Name</label>
