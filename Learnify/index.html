@@ -36,10 +36,7 @@ body {
 
 
 
-.center,
-.collection,
-.books,
-.videos {
+.collection{
 
   position: relative;
   z-index: 1;
@@ -49,20 +46,7 @@ body {
   flex-wrap: wrap;
 }
 
-
-#subtitle {
-
-  color: black;
-
-
-
-  background-color: burlywood;
-  border: solid black 7px;
-  padding: 10px;
-  font-size: 1.3rem;
-}
-
-h2 {
+#quotes h2 {
   color: #ff4646;
   text-align: center;
   margin-top: 3rem;
@@ -71,57 +55,7 @@ h2 {
 }
 
 body {
-
-
   background-color: #040303;
-}
-
-hr {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-  border-color:rgb(255, 255, 255);
-}
-
-.card{
-    position: relative;
-    width: 300px;
-    height: 500px;
-    background: rgba(255, 255, 255, 0.05);
-    margin: 25px;
-    box-shadow: 0 15px 35px rgb(0 0 0 / 50%);
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px); 
-}
-
-.vl {
-  border-left: 6px solid rgb(255, 255, 255);
-  height: 300px;
-  margin: 0 50%;
-  z-index: 10;
-}
-
-.benefit-points{
-  transition: 0.25s ease-in;
-  margin: 10px 10px;
-}
-.benefit-points:hover{
-  transform: translate(10px);
-
-
-}
-.right-side #subtitle{
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
-  transition: all .3s ease-in-out;
-}
-
-.right-side #subtitle:hover{
-    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
-    transform: translate3d(0px, -10px, 0px);
-
 }
 
 
@@ -188,140 +122,7 @@ hr {
   font-size: 24px;
 }
 
-.container {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 40px 0;
-}
 
-.container .card {
-  position: relative;
-  width: 300px;
-  height: 500px;
-  background: rgba(255, 255, 255, 0.05);
-  margin: 25px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
-}
-
-.container .card .content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  transition: 0.5s;
-  margin-bottom: 43px;
-}
-
-.container .card:hover .content {
-  transform: translateY(-20px);
-}
-
-.book-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  perspective: 600px;
-}
-
-@keyframes initAnimation {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(-30deg);
-  }
-}
-
-.container .card .content .contentBx h3 {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  margin: 20px 0 10px;
-  line-height: 1.1em;
-}
-
-.container .card .content .contentBx h3 span {
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: initial;
-}
-
-.container .card .sci {
-  position: absolute;
-  bottom: 50px;
-  display: flex;
-}
-
-.container .card .sci li {
-  list-style: none;
-  margin: 0 10px;
-}
-
-.card a {
-  display: block;
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5rem 1.25rem;
-  border-radius: 5px;
-  color: #040404;
-  cursor: pointer;
-  margin-bottom: -21%;
-  text-decoration: none;
-}
-
-.card a:hover {
-  background-color: #7de2d1;
-
-}
-
-  html {
-    scroll-behavior: smooth;
-
-  }
-
-  .hidden {
-    visibility: hidden;
-  }
-
-  .back-top-wrap {
-    position: fixed;
-    bottom: 5rem;
-    right: 1rem;
-    background-color: #80F7D1;
-    padding: 1rem 1.2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    z-index: 100;
-  }
-
-  .back-top-wrap:hover {
-    background-color: #00a2ff;
-    color: #80F7D1;
-  }
-
-  .back-top-wrap:hover .fas.fa-arrow-up {
-    color: white;
-  }
-
-  .fas.fa-arrow-up {
-    color: #00488F;
-    transition: 0.3s ease-in-out;
-  }
 </style>
 
 <body onload="myFunction()">
@@ -454,14 +255,14 @@ hr {
           <p>
             Instant study support at your fingertips – meet our friendly Chatbot companion!
           </p>
-          <a href="https://chat.openai.com/">
+          <a href="">
             Let's Explore
           </a>
         </div>
       </div>
       <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
         <div class="round-image">
-          <img src="./images/photo7.jpg" alt="doctor" loading="lazy" />
+          <img src="./images/quizes.jpg" alt="doctor" loading="lazy" />
         </div>
         <div class="description">
           <h2>Interactive Quizzes</h2>
@@ -475,7 +276,7 @@ hr {
       </div>
     </div>
   </section>
-
+<!-- quotes -->
   <section id="quotes">
       <h1 style="font-size:2.3rem">Motivational Quotes</h1>
       <h2>Inspirational Quotes</h2>
@@ -605,7 +406,7 @@ hr {
         <h5>Prapti Sharma</h5>
         <div class="pra">
           <p>Full Stack Web Developer</p>
-          <a href="https://www.linkedin.com/in/prapti-sharma-796080257"><button>Let's Connect</button></a>
+          <a href="https://bio.link/"><button>Let's Connect</button></a>
         </div>
       </div>
       <div data-aos="fade-up" data-aos-duration="800" class="card">
